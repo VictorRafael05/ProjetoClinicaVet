@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastrar Animal — ClinicaVeterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="topbar">
+      <a href="index.html" class="back">← Voltar</a>
+      <h1 class="logo">ClinicaVeterinaria</h1>
+      <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="cadastro_cliente.html">Clientes</a>
+        <a href="cadastro_animal.html">Animais</a>
+        <a href="marcar_consulta.html">Serviços</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Cadastrar Animal</h2>
+    <form id="form-animal" class="card form-card">
+      <label>Nome
+        <input type="text" id="animal-nome" required>
+      </label>
+
+      <label>Tipo (ex: cachorro, gato)
+        <input type="text" id="animal-tipo" required>
+      </label>
+
+      <label>Raça
+        <input type="text" id="animal-raca">
+      </label>
+
+      <label>Data de Nascimento
+        <input type="date" id="animal-nasc">
+      </label>
+
+      <label>ID do Cliente (responsável)
+        <input type="number" id="animal-cliente-id" required>
+      </label>
+
+      <label>Observações
+        <textarea id="animal-observacoes" rows="3"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Salvar Animal</button>
+        <button type="reset" class="btn">Limpar</button>
+      </div>
+
+      <div id="animal-msg" class="msg"></div>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

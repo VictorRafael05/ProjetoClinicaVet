@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Histórico do Animal — ClinicaVeterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="topbar">
+      <a href="index.html" class="back">← Voltar</a>
+      <h1 class="logo">ClinicaVeterinaria</h1>
+      <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="cadastro_cliente.html">Clientes</a>
+        <a href="cadastro_animal.html">Animais</a>
+        <a href="marcar_consulta.html">Serviços</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Histórico do Animal</h2>
+    <div class="card form-card">
+      <label>ID do Animal
+        <input type="number" id="hist-animal-id" placeholder="Digite o ID">
+      </label>
+      <div class="form-actions">
+        <button id="btn-buscar-hist" class="btn primary">Buscar Histórico</button>
+      </div>
+    </div>
+
+    <div id="hist-resultado" class="card"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

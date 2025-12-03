@@ -1,0 +1,72 @@
+<div class="menu">
+  <a href="index.html">Início</a>
+  <a href="cadastro_cliente.html">Clientes</a>
+  <a href="cadastro_animal.html">Animais</a>
+  <a href="marcar_consulta.html">Serviços</a>
+  <!doctype html>
+  <html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8" />
+    <!doctype html>
+    <html lang="pt-BR">
+
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Listar Clientes — ClinicaVeterinaria</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+  <body class="page">
+    <header class="topbar">
+      <div class="topbar">
+        <a href="index.html" class="back">← Voltar</a>
+        <h1 class="logo">ClinicaVeterinaria</h1>
+        <div class="menu">
+          <a href="index.html">Início</a>
+          <a href="cadastro_cliente.html">Clientes</a>
+          <a href="cadastro_animal.html">Animais</a>
+          <a href="marcar_consulta.html">Serviços</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Clientes e seus Animais</h2>
+      <div id="lista-clientes" class="card"></div>
+    </main>
+
+    <!-- Modal de Edição -->
+    <div id="modal-editar" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Editar Cliente</h3>
+          <button class="modal-close" onclick="fecharModalEdicao()">&times;</button>
+        </div>
+        <form id="form-editar-cliente" class="form-card" style="box-shadow:none; padding:0; border:none;">
+          <input type="hidden" id="edit-id">
+          <label>Nome
+            <input type="text" id="edit-nome" required>
+          </label>
+          <label>Email
+            <input type="email" id="edit-email">
+          </label>
+          <label>Telefone
+            <input type="text" id="edit-telefone">
+          </label>
+          <label>Endereço
+            <input type="text" id="edit-endereco">
+          </label>
+          <div class="form-actions" style="margin-top:15px;">
+            <button type="submit" class="btn primary">Salvar</button>
+            <button type="button" class="btn" onclick="fecharModalEdicao()">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+  </html>

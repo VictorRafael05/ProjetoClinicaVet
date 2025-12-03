@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marcar Consulta — ClinicaVeterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="topbar">
+      <a href="index.html" class="back">← Voltar</a>
+      <h1 class="logo">ClinicaVeterinaria</h1>
+      <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="cadastro_cliente.html">Clientes</a>
+        <a href="cadastro_animal.html">Animais</a>
+        <a href="marcar_consulta.html">Serviços</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Agendamento de Serviço</h2>
+    <form id="form-consulta" class="card form-card">
+      <label>Animal (ID)
+        <input type="number" id="consulta-animal-id" required>
+      </label>
+
+      <label>Serviço
+        <select id="consulta-servico-id"></select>
+      </label>
+
+      <label>Data e Hora
+        <input type="datetime-local" id="consulta-datahora" required>
+      </label>
+
+      <label>Observações
+        <textarea id="consulta-observacoes" rows="3"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Agendar</button>
+        <button type="reset" class="btn">Limpar</button>
+      </div>
+
+      <div id="consulta-msg" class="msg"></div>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

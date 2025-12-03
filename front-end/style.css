@@ -1,0 +1,429 @@
+:root {
+  --bg: #f4fbf6;
+  --card: #ffffff;
+  --accent: #2f9e44;
+  --accent-2: #60b462;
+  --muted: #6b6b6b;
+  --border: #e6efe8;
+  --shadow: 0 6px 18px rgba(47, 158, 68, 0.08);
+  --radius: 10px;
+  --maxw: 980px;
+  --pad: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif
+}
+
+body.page {
+  margin: 0;
+  background: var(--bg);
+  color: #15421b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Topbar principal */
+.topbar {
+  background: linear-gradient(90deg, rgba(47, 158, 68, 0.98), rgba(96, 180, 98, 0.95));
+  color: #fff;
+
+  padding: 6px 20px;
+  /* Barra mais compacta: 6px vertical, 20px horizontal */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  /* Sombra suave */
+
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente o conteúdo */
+  justify-content: space-between;
+  /* Espaço entre logo e menu (se houver) */
+}
+
+/* Título / logo da clínica */
+.topbar .logo {
+  font-size: 28px;
+  /* Texto grande */
+  font-weight: bold;
+  /* Mais destacado */
+  margin: 0;
+  /* Remove margem padrão do h1 */
+  letter-spacing: 1px;
+  /* Espaçamento sutil entre letras */
+}
+
+/* Opcional: links ou botões na barra */
+.topbar a,
+.topbar button {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar a:hover,
+.topbar button:hover {
+  opacity: 0.8;
+  /* efeito sutil ao passar o mouse */
+}
+
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centralizar conteúdo */
+  gap: 12px;
+  width: 100%;
+  /* Garantir largura total para centralizar */
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+  /* Tamanho da fonte aumentado */
+}
+
+.topbar .back {
+  margin-left: auto;
+  /* empurra o link para a extrema direita */
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.container {
+  max-width: var(--maxw);
+  margin: 20px auto;
+  padding: 0 var(--pad);
+}
+
+h2 {
+  color: #15421b;
+  margin-top: 6px
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  color: inherit
+}
+
+.card .card-icon {
+  font-size: 28px
+}
+
+.card .card-title {
+  margin-top: 8px;
+  font-weight: 700
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 10px;
+  color: #1b4f2b
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="date"],
+.form-card input[type="number"],
+.form-card input[type="datetime-local"],
+.form-card textarea,
+.form-card select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcefe0;
+  background: #fcfffc;
+  margin-top: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  background: #eef8f0;
+  color: var(--accent);
+  cursor: pointer
+}
+
+.btn.primary {
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700
+}
+
+.btn:hover {
+  opacity: 0.95
+}
+
+:root {
+  --bg: #f4fbf6;
+  --card: #ffffff;
+  --accent: #2f9e44;
+  --accent-2: #60b462;
+  --muted: #6b6b6b;
+  --border: #e6efe8;
+  --shadow: 0 6px 18px rgba(47, 158, 68, 0.08);
+  --radius: 10px;
+  --maxw: 980px;
+  --pad: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif
+}
+
+body.page {
+  margin: 0;
+  background: var(--bg);
+  color: #15421b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Topbar principal */
+.topbar {
+  background: linear-gradient(90deg, rgba(47, 158, 68, 0.98), rgba(96, 180, 98, 0.95));
+  color: #fff;
+
+  padding: 6px 20px;
+  /* Barra mais compacta: 6px vertical, 20px horizontal */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  /* Sombra suave */
+
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente o conteúdo */
+  justify-content: space-between;
+  /* Espaço entre logo e menu (se houver) */
+}
+
+/* Título / logo da clínica */
+.topbar .logo {
+  font-size: 28px;
+  /* Texto grande */
+  font-weight: bold;
+  /* Mais destacado */
+  margin: 0;
+  /* Remove margem padrão do h1 */
+  letter-spacing: 1px;
+  /* Espaçamento sutil entre letras */
+}
+
+/* Opcional: links ou botões na barra */
+.topbar a,
+.topbar button {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar a:hover,
+.topbar button:hover {
+  opacity: 0.8;
+  /* efeito sutil ao passar o mouse */
+}
+
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centralizar conteúdo */
+  gap: 12px;
+  width: 100%;
+  /* Garantir largura total para centralizar */
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+  /* Tamanho da fonte aumentado */
+}
+
+.topbar .back {
+  margin-left: auto;
+  /* empurra o link para a extrema direita */
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.container {
+  max-width: var(--maxw);
+  margin: 20px auto;
+  padding: 0 var(--pad);
+}
+
+h2 {
+  color: #15421b;
+  margin-top: 6px
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  color: inherit
+}
+
+.card .card-icon {
+  font-size: 28px
+}
+
+.card .card-title {
+  margin-top: 8px;
+  font-weight: 700
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 10px;
+  color: #1b4f2b
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="date"],
+.form-card input[type="number"],
+.form-card input[type="datetime-local"],
+.form-card textarea,
+.form-card select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcefe0;
+  background: #fcfffc;
+  margin-top: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  background: #eef8f0;
+  color: var(--accent);
+  cursor: pointer
+}
+
+.btn.primary {
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700
+}
+
+.btn:hover {
+  opacity: 0.95
+}
+
+.msg {
+  margin-top: 10px;
+  color: var(--muted)
+}
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  color: var(--muted)
+}
+
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: var(--accent);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}

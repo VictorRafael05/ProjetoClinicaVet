@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastrar Cliente — ClinicaVeterinaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+  <header class="topbar">
+    <div class="topbar">
+      <a href="index.html" class="back">← Voltar</a>
+      <h1 class="logo">ClinicaVeterinaria</h1>
+      <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="cadastro_cliente.html">Clientes</a>
+        <a href="cadastro_animal.html">Animais</a>
+        <a href="marcar_consulta.html">Serviços</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Cadastrar Cliente</h2>
+    <form id="form-cliente" class="card form-card">
+      <label>Nome
+        <input type="text" id="cliente-nome" required>
+      </label>
+
+      <label>Email
+        <input type="email" id="cliente-email">
+      </label>
+
+      <label>Telefone
+        <input type="text" id="cliente-telefone">
+      </label>
+
+      <label>Endereço
+        <input type="text" id="cliente-endereco">
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Salvar Cliente</button>
+        <button type="reset" class="btn">Limpar</button>
+      </div>
+
+      <div id="cliente-msg" class="msg"></div>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
